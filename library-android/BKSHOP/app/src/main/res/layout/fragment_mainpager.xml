@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="#DDDDDD"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <!--<com.sileria.android.view.HorzListView-->
+        <!--android:spacing="20dip"-->
+        <!--android:smoothScrollbar="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:id="@+id/hlistview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp" />-->
+
+        <material.quangduy.com.material.another.CustomViewPager
+            android:id="@+id/viewPager1"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <material.quangduy.com.material.another.ExpandableHeightGridView
+            android:id="@+id/gridView1"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:divider="@null"
+            android:verticalSpacing="15dp" >
+        </material.quangduy.com.material.another.ExpandableHeightGridView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/more_btn"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Xem thêm"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:layout_height="50dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

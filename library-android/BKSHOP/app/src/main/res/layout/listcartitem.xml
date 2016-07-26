@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1.3"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1.7"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="left"
+            android:textColor="#222222"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stock"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="left"
+            android:text="Còn hàng"
+            android:textColor="#222222" />
+
+        <!--<RatingBar-->
+        <!--android:id="@+id/rate"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:clickable="false"-->
+        <!--android:focusable="false"-->
+        <!--android:scaleX="0.3"-->
+        <!--android:scaleY="0.3"-->
+        <!--android:stepSize="0.1"-->
+        <!--android:transformPivotX="0dp"-->
+        <!--android:transformPivotY="0dp" />-->
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="left"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:focusable="false"
+            android:textColor="#222222" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="+"
+            android:background="@drawable/ripple_round"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/soluong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#DDDDDD"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/down"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="-"
+            android:background="@drawable/ripple_round"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="#0099FF"
+            android:text="Xóa"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_menu_send"
+            android:visible="true"
+            android:title="Trang chủ" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/ic_menu_send"
+            android:visible="true"
+            android:title="Sản phẩm hot" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@android:drawable/ic_menu_send"
+            android:visible="true"
+            android:title="Khuyến mãi" />
+    </group>
+
+    <item android:title="Liên kết - Cộng đồng"
+        >
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_send"
+                android:visible="true"
+                android:title="Đánh giá trên cửa hàng" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@android:drawable/ic_menu_send"
+                android:visible="true"
+                android:title="Góp ý cho chúng tôi" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@android:drawable/ic_menu_send"
+                android:visible="true"
+                android:title="Chia sẻ" />
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@android:drawable/ic_menu_send"
+                android:visible="true"
+                android:title="Thông tin ứng dụng" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_login"
+        android:icon="@android:drawable/ic_menu_send"
+        android:visible="true"
+        android:title="Đăng nhập" />
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@android:drawable/ic_menu_send"
+        android:visible="false"
+        android:title="Lịch sử giao dịch"/>
+
+    <item
+        android:id="@+id/nav_userinfo"
+        android:icon="@android:drawable/ic_menu_send"
+        android:visible="false"
+        android:title="Thông tin tài khoản"/>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@android:drawable/ic_menu_send"
+        android:visible="false"
+        android:title="Đăng xuất"/>
+
+</menu>
